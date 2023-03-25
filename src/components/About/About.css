@@ -1,0 +1,12 @@
+.img-profile  img{
+      width:40% !important;
+      height:35%  !important;
+      margin-top: -5rem !important;
+}
+.about {
+      background-color: linear-gradient(rgb(0,113,86), rgb(194,195,200),
+rgb(154,215,92)) !important;
+}
+.bg-custum{
+      background-color: rgb(0,202,171) !important;
+}

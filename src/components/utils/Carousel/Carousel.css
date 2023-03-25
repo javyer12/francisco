@@ -1,0 +1,15 @@
+.naming {
+      /* display: flex !important; */
+      /* align-content: center !important; */
+      position: relative !important;
+      z-index: 3 !important;
+}
+.naming div {
+      margin-top: 20% !important;
+      position: absolute !important;
+}
+
+h1,h3 {
+      text-align: center !important;
+      font-size: 3.5em;
+}
