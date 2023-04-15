@@ -5,6 +5,7 @@ import { NextButton } from "../Buttons/Button";
 import { ButtonLink } from "../Buttons/Button";
 
 import me from "../C/me5.png";
+import me5 from "../C/me4.png";
 
 export default function Carousel(props) {
   return (
@@ -14,15 +15,15 @@ export default function Carousel(props) {
           <h1 className="text-success text-md">Francisco Murillo</h1>
           <h3 className="text-success  text-sm-center">Front-End Developer</h3>
 
-          <div className="d-flex justify-content-center ms-5">
+          <div className="d-flex carousel_button justify-content-around mt-5 ms-5">
             <NextButton
               label="Get Started!"
-              classname="btn btn-outline-dark btn-lg ms-5"
+              classname="btn btn-outline-dark btn-lg p-3 ms-5 mt-5 carousel_button-label"
               destination="#about"
             />
             <ButtonLink
               label="Watch CV"
-              classname="btn btn-outline-dark btn-lg ms-5 "
+              classname="btn btn-outline-dark btn-lg ms-5 mt-5 carousel_button-label"
               destination="https://www.canva.com/design/DAFS3vyQgWU/uD9bqDSt6j9qvsmIIshHxw/view"
             />
           </div>
@@ -35,12 +36,12 @@ export default function Carousel(props) {
         data-bs-rid="carousel"
       >
         <div className="carousel-inner ">
-          <div className="carousel-item active mainCarousel">
+          <div className=" carousel-item active mainCarousel">
             <img src={me} classname="card-img-top" alt="me" />
           </div>
-          <div className="carousel-item active mainCarousel">
-            <img src={me} classname="card-img-top " alt="me" />
-          </div>
+          {/* <div className="carousel-item active mainCarousel">
+            <img src={me5} classname="card-img-top " alt="me" />
+          </div> */}
         </div>
         <button
           className="carousel-control-prev"

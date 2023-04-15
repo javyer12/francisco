@@ -16,3 +16,25 @@ h1,h3 {
 .mainCarousel {
       height: 100vh !important;
 }
+
+@media (max-width: 500px) {
+      .naming div{
+            margin-top: 60% !important;
+            position: absolute !important;
+      }
+
+      h1, h3 {
+            visibility: hidden;
+      }
+      .carousel_button  {
+            margin-top: 20% !important;
+            margin-left: -30% !important;
+      }
+      .carousel_button-label {
+            font-size: 1.2rem!important;
+      }
+
+      .mainCarousel {
+            margin: 0  1.5rem !important;
+      }
+  }
