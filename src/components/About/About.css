@@ -1,7 +1,7 @@
 .img-profile  img{
-      width:40% !important;
-      height:35%  !important;
-      margin-top: -5rem !important;
+      width:80% !important;
+      height:90%  !important;
+      /* margin-top: -5rem !important; */
 }
 .about {
       background-color: linear-gradient(rgb(0,113,86), rgb(194,195,200),

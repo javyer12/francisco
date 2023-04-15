@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import me from "../utils/C/me5.png";
+import me from "../utils/C/me4.png";
 import MoreInfo from "./MoreInfo";
 import { NextButton } from "../utils/Buttons/Button";
 
@@ -20,17 +20,17 @@ export default function About() {
   // user("luca", "dev", ...[ "Honduras", "Single" ])
   return (
     <React.Fragment>
-      <div id="about" className="row h-100 bg-dark p-2 w-105 ">
-        <div className=" col-4 mt-5 w-20 m-4  text-center" data-bs-spy="scroll">
-          <nav className=" shadow bg-black rounded nav nav-pills flex-column">
+      <div id="about" className="row p-2 mb-5">
+        <div className=" col-4 m-4 mb-0 mt-0 text-center" data-bs-spy="scroll">
+          <nav className="bg-light  mb-0 shadow nav nav-pills flex-column">
             <div className="text-center img-profile ">
-              <img src={me} alt="francisco murillo" className="img-fluid" />
+              <img src={me} alt="francisco murillo" className="" />
             </div>
             <nav
               id="navbar-example3 "
-              className="h-100 flex-column align-items-stretch p-3 border-end m-3 mt-0"
+              className="h-100 flex-column align-items-stretch p-3 border-end m-3 mb-0 mt-0"
             >
-              <h5 className="text-white">Francisco Murillo</h5>
+              <h5 className="text-black">Francisco Murillo</h5>
               <h6 className="text-white bg-dark rounded p-2">
                 Front-End Developer
               </h6>
@@ -69,22 +69,22 @@ export default function About() {
           </nav>
         </div>
 
-        <div className="col-7  shadow mt-3 m-4 p-0 h-100 ">
+        <div className="col-7  mt-0 shadow p-0 ">
           <h4 className="text-success text-start m-3">About Me</h4>
           <div
             data-bs-spy="scroll"
             data-bs-target="#navbar-example3"
             data-bs-smooth-scroll="true"
-            className=" border border-dark bg-black shadow  border-2 rounded scrollspy-example-2 d-flex"
+            className="scrollspy-example-2 d-flex"
             tabIndex="0"
           >
             <div id="item-1-1">
               <div className="m-3 ">
-                <p className="text-white">
+                <p className="text-black">
                   Soy un desarrollador web y de aplicaciones móviles junior con
                   una pasión por crear soluciones innovadoras y atractivas para
                   la web y los dispositivos móviles.{" "}
-                  <small className="text-white">
+                  <small className="text-success">
                     Con experiencia en HTML, CSS, JavaScript, Flutter, React
                   </small>
                   , me esfuerzo por producir código limpio, eficiente y
@@ -99,7 +99,8 @@ export default function About() {
                   tecnologías y herramientas para mejorar mis habilidades y
                   aportar valor a los proyectos. Me encanta trabajar en equipo y
                   estoy dispuesto a hacer lo necesario para lograr el éxito del
-                  proyecto. Con un enfoque en la atención al detalle y la
+                  proyecto.
+                  Con un enfoque en la atención al detalle y la
                   búsqueda constante de soluciones eficientes, estoy listo para
                   enfrentar cualquier desafío y ayudar a mis clientes a alcanzar
                   sus objetivos en línea.
@@ -107,7 +108,7 @@ export default function About() {
                 <div className="d-flex   justify-content-center">
                   <NextButton
                     label="Dev Tools"
-                    classname="btn shadow btn-success  btn-lg  ms-5"
+                    classname="btn shadow btn-outline-dark  btn-lg  ms-5"
                     destination="#tools"
                   />
                 </div>

@@ -70,7 +70,7 @@ export const Proyect = (props) => {
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.description}</p>
-          <a data-bs-target={`#${props.dbTarget}`} className="btn btn-success">
+          <a data-bs-target={`#${props.dbTarget}`} className="btn btn-outline-dark">
             More Details
           </a>
         </div>

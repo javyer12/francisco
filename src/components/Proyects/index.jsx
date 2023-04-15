@@ -7,6 +7,8 @@ import contactCover from "../utils/C/contactCover.jpeg";
 import wandaLanding from "../utils/C/wandaLanding.jpeg";
 import kgsjs from "../utils/C/kgsjs.jpeg";
 import greena from "../utils/C/green.jpeg";
+import csharpcrud from "../utils/C/csharp-crud.jpeg";
+import kanjiapp from '../utils/C/kanjiapp.jpeg';
 
 const dataProyects = [
   {
@@ -44,32 +46,32 @@ const dataProyects = [
 const dataProyects2 = [
   {
     id: 1,
-    title: "Student Average",
+    title: "Kanji App",
     description:
-      "Proyect made with c#, This is a Console App to get the average of students, Creating subjects, students and teachers",
-    imageUrl: contactCover,
-    demoUrl: "https://github.com/javyer12/csharp",
-    githubUrl: "https://github.com/javyer12/csharp",
+      "Proyect made with React js and Bootstrap, Using the Github User Api, kanji App returns the user's description, if the user exists.",
+    imageUrl: kanjiapp,
+    demoUrl: "https://kanji-github-users.vercel.app/",
+    githubUrl: "https://github.com/javyer12/userGit",
     dbTarget: "forthProyect",
   },
   {
     id: 2,
     title: "Green A",
     description:
-      "In order to learn HTML Tags, i built a landing page  of Green A, only HTML5, JavaScript",
+      "In order to learn HTML Tags, i built a landing page  of Green A, only HTML5,CSS3, JavaScript and IndexedDB.",
     imageUrl: greena,
-    demoUrl: "https://github.com/javyer12/green-a",
-    githubUrl: "https://javagreen.netlify.app",
+    demoUrl: "https://javagreen.netlify.app",
+    githubUrl: "https://github.com/javyer12/green-a",
     dbTarget: "fifthProyect",
   },
   {
     id: 3,
-    title: " KGS JS",
+    title: "C# CRUD",
     description:
-      "Project to generate ramdon messages to commit!!. You can check it out at NPM Web Site. ",
-    imageUrl: kgsjs,
-    demoUrl: "https://www.npmjs.com/package/kgsjs",
-    githubUrl: "https://github.com/javyer12/kgsjs",
+      "Building this project,i learned how to create a simple CRUD, i also learned advanced c# concepts, in addition to the SOLID principles",
+    imageUrl: csharpcrud,
+    demoUrl: "https://github.com/javyer12/entityFramework",
+    githubUrl: "https://github.com/javyer12/entityFramework",
     dbTarget: "sixthProyect",
   },
 ];
@@ -111,7 +113,7 @@ export function Proyects() {
           <NextButton
             destination="https://platzi.com/p/franmurillo/"
             label="More Proyects"
-            classname="btn shadow btn-success  btn-lg  mt-4 ms-5"
+            classname="btn shadow btn-outline-dark  btn-lg  mt-4 ms-5"
           />
         </div>
       </nav>

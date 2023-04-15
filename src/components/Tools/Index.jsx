@@ -196,7 +196,7 @@ export default function Tools() {
           <NextButton
             destination="#proyects"
             label="Proyects"
-            classname="btn shadow btn-success  btn-lg  mt-4 ms-5"
+            classname="btn shadow btn-outline-dark  btn-lg  mt-4 ms-5"
           />
         </div>
       </nav>

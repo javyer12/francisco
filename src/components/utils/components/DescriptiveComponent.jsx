@@ -11,6 +11,7 @@ function DescriptiveComponent(props) {
         <div className="ms-5">
           <p className="text-start ">
             <a
+              target="_blank" rel="noreferrer"
               className="text-decoration-none text-body-tertiary "
               href={props.repoLink}
             >
