@@ -1,0 +1,12 @@
+@media (max-width: 500px) {
+    .proyectsList {
+        display: grid !important;
+        grid-template-rows: .9fr .9fr .9fr !important;;
+        width: 95vw !important;
+        margin:auto !important;
+        margin-top: 2rem !important;
+    }
+    .proyectsList div{
+        margin-top: .9rem !important;
+    }
+}

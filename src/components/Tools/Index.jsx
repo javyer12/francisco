@@ -2,6 +2,7 @@ import React from "react";
 import { NextButton } from "../utils/Buttons/Button";
 import { FeatureComponent } from "../utils/components/FeatureComponent";
 
+import './devtools.css';
 // Icons List
 // front icons
 import { DiChrome } from "react-icons/di";
@@ -125,9 +126,9 @@ export default function Tools() {
   return (
     <React.Fragment>
       <nav id="tools">
-        <div className="container  text-center mb-4">
+        <div className=" container  text-center mb-4">
           <h4 className="mt-3 text-success">Dev Tools</h4>
-          <div className="row mt-3 mb-3">
+          <div className="devTools row mt-3 mb-3">
             <div className="col ">
               <div className="border border-light-subtle border-2 shadow rounded p-3">
                 <h4 className="bg-dark shadow text-white m-2 mb-4">

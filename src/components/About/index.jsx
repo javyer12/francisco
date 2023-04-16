@@ -21,9 +21,9 @@ export default function About() {
   return (
     <React.Fragment>
       <div id="about" className="row p-2 mb-5">
-        <div className=" col-4 m-4 mb-0 mt-0 text-center" data-bs-spy="scroll">
+        <div className="me-info col-4 m-4 mb-0 mt-0 text-center" data-bs-spy="scroll">
           <nav className="bg-light  mb-0 shadow nav nav-pills flex-column">
-            <div className="text-center img-profile ">
+            <div className="me-photo text-center img-profile ">
               <img src={me} alt="francisco murillo" className="" />
             </div>
             <nav
@@ -69,7 +69,7 @@ export default function About() {
           </nav>
         </div>
 
-        <div className="col-7  mt-0 shadow p-0 ">
+        <div className=" me-description col-7  mt-0 shadow p-0 ">
           <h4 className="text-success text-start m-3">About Me</h4>
           <div
             data-bs-spy="scroll"

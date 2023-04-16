@@ -1,6 +1,7 @@
 import React from "react";
 import { Proyect } from "./Proyect";
 import { NextButton } from "../utils/Buttons/Button";
+import './proyects.css';
 
 // proyects images
 import contactCover from "../utils/C/contactCover.jpeg";
@@ -82,9 +83,9 @@ export function Proyects() {
       <nav id="proyects">
         <div className="container text-center mb-4">
           <h4 className="mt-3 text-success">Proyects</h4>
-          <div className="row mt-3 mb-3">
+          <div className="proyectsList row mt-3 mb-3">
             {dataProyects.map((item) => (
-              <div className="col" key={item.id}>
+              <div className=" col" key={item.id}>
                 <Proyect
                   title={item.title}
                   description={item.description}
@@ -96,9 +97,9 @@ export function Proyects() {
               </div>
             ))}
           </div>
-          <div className="row mt-3 mb-3">
+          <div className="proyectsList row mt-3 mb-3">
             {dataProyects2.map((item) => (
-              <div className="col" key={item.id}>
+              <div className=" col" key={item.id}>
                 <Proyect
                   title={item.title}
                   description={item.description}
