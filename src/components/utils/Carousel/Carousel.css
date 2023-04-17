@@ -14,7 +14,7 @@ h1,h3 {
       font-size: 3.5em;
 }
 .mainCarousel {
-      height: 100vh !important;
+      height: 90vh !important;
 }
 
 @media (max-width: 500px) {
@@ -32,6 +32,42 @@ h1,h3 {
       }
       .carousel_button-label {
             font-size: 1.2rem!important;
+      }
+
+      .mainCarousel {
+            margin: 0  1.5rem !important;
+      }
+  }
+
+  @media (max-width: 720px) {
+      .naming {
+            width: 99vw !important;
+      }
+      .naming div{
+            margin-top: 60% !important; 
+            position: absolute !important;
+      }
+
+      h1, h3 {
+            visibility: normal;
+      }
+      .me-name{
+            text-align: right !important;
+            margin: -99% 0 0 60% !important;
+            font-size: 2.5em;
+      }
+       .career {
+            text-align: right !important;
+            margin: 0% 0 0 60% !important;
+            font-size: 1.5em;
+      }
+      .carousel_button  {
+            margin-left: -30% !important;
+      }
+  
+      .carousel_button-label {
+            font-size: 1.2rem!important;
+            margin-top: 50% !important;
       }
 
       .mainCarousel {

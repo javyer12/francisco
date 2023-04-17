@@ -12,8 +12,8 @@ export default function Carousel(props) {
     <React.Fragment>
       <div className="z-3  naming mt-5 ">
         <div className=" mt-5 top-50 start-50 translate-middle d-block justify-content-center">
-          <h1 className="text-success text-md">Francisco Murillo</h1>
-          <h3 className="text-success  text-sm-center">Front-End Developer</h3>
+          <h1 className="me-name text-success text-md">Francisco Murillo</h1>
+          <h3 className="career text-success  text-sm-center">Front-End Developer</h3>
 
           <div className="d-flex carousel_button justify-content-around mt-5 ms-5">
             <NextButton

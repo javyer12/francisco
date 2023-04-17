@@ -1,5 +1,40 @@
-@media (max-width: 500px) {
+
+
+@media (max-width: 720px) {
+    #tools {
+        width: 95vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .contianer {
+        width: 95vw !important;
+
+        margin: 0 !important;
+        padding: 0!important;
+    }
     .devTools {
+        width: 95vw !important;
+
         display: block !important;
+        margin: auto !important;
+    }
+}
+@media (max-width: 500px) {
+    #tools {
+        width: 95vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .contianer {
+        width: 95vw !important;
+
+        margin: 0 !important;
+        padding: 0!important;
+    }
+    .devTools {
+        width: 95vw !important;
+
+        display: block !important;
+        margin: auto !important;
     }
 }

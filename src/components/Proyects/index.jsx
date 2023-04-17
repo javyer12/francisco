@@ -114,7 +114,7 @@ export function Proyects() {
           <NextButton
             destination="https://platzi.com/p/franmurillo/"
             label="More Proyects"
-            classname="btn shadow btn-outline-dark  btn-lg  mt-4 ms-5"
+            classname="btn shadow btn-outline-dark  btn-lg  mt-4 mb-3 ms-5"
           />
         </div>
       </nav>

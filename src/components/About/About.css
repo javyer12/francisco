@@ -31,3 +31,23 @@ rgb(154,215,92)) !important;
             margin: auto !important;
       }
 }
+@media (max-width: 720px) {
+      
+      #about{
+            display: block !important;
+      }
+      .me-info {
+            width: 90vw !important;
+      }
+      .me-photo img {
+            visibility: hidden;
+            margin-top: -70% !important;
+      }
+      h5 {
+            font-size: 2rem!important;
+      }
+      .me-description{
+            width: 90vw;
+            margin: auto !important;
+      }
+}
