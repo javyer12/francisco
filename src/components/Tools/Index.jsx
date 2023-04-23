@@ -127,7 +127,7 @@ export default function Tools() {
     <React.Fragment>
       <nav id="tools">
         <div className=" container  text-center mb-4">
-          <h4 className="mt-3 mb-3 text-center text-success">Dev Tools</h4>
+          <h1 id="dev-tool" className="mt-3 mb-3 text-center text-success">Dev Tools</h1>
           <div className="devTools row mt-3 mb-3">
             <div className="col ">
               <div className="border mt-2 border-light-subtle border-2 shadow rounded p-3">
@@ -194,11 +194,11 @@ export default function Tools() {
               </div>
             </div>
           </div>
-          <NextButton
+          {/* <NextButton
             destination="#proyects"
             label="Proyects"
             classname="btn shadow btn-outline-dark  btn-lg  mt-4 ms-5"
-          />
+          /> */}
         </div>
       </nav>
     </React.Fragment>

@@ -1,4 +1,4 @@
-#dev-tool {
+#dev-project {
 	animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
@@ -48,46 +48,40 @@
 	}
 }
 
-@media (max-width: 720px) {
-	#tools {
-		width: 95vw !important;
+@media (max-width: 500px) {
+	.container {
 		margin: 0 !important;
-		padding: 0 !important;
 	}
 
-	.contianer {
+	.proyectsList {
+		display: grid !important;
+		grid-template-rows: .9fr .9fr .9fr !important;
+		;
 		width: 95vw !important;
-
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-	.devTools {
-		width: 95vw !important;
-
-		display: block !important;
 		margin: auto !important;
+		margin-top: 2rem !important;
+	}
+
+	.proyectsList div {
+		margin-top: .9rem !important;
 	}
 }
 
-@media (max-width: 500px) {
-	#tools {
-		width: 95vw !important;
+@media (max-width: 720px) {
+	.container {
 		margin: 0 !important;
-		padding: 0 !important;
 	}
 
-	.contianer {
+	.proyectsList {
+		display: grid !important;
+		grid-template-rows: .9fr .9fr .9fr !important;
+		;
 		width: 95vw !important;
-
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-	.devTools {
-		width: 95vw !important;
-
-		display: block !important;
 		margin: auto !important;
+		margin-top: 2rem !important;
+	}
+
+	.proyectsList div {
+		margin-top: .9rem !important;
 	}
 }

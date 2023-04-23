@@ -1,0 +1,8 @@
+@media (max-width: 500px) {
+    .footer  {
+        margin-top: .9rem !important;
+    }
+    .footer h5 {
+        font-size: small !important;
+    }
+}

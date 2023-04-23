@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import DescriptiveComponent from "../utils/components/DescriptiveComponent";
-
-export const Proyect = (props) => {
-  // const { title, description, imageUrl, demoUrl, githubUrl } = props;
+import { ButtonLink } from "../utils/Buttons/Button";
+export const Project = (props) => {
+  const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, moreProjects } = props;
   return (
     <React.Fragment>
       <div
         className="modal fade modal-dialog-scrollable  bg-transparent"
-        id={props.dbTarget}
+        id={dbTarget}
         aria-hidden="true"
         aria-labelledby="exampleModalToggleLabel"
         tabIndex="-1"
@@ -17,7 +17,7 @@ export const Proyect = (props) => {
             <div className="modal-header">
               <h2 className="modal-title fs-5" id="exampleModalToggleLabel">
                 {" "}
-                {props.title}
+                {title}
               </h2>
               <button
                 type="button"
@@ -29,32 +29,35 @@ export const Proyect = (props) => {
             <div className="modal-body">
               <img
                 className="card-img-top"
-                src={props.imageUrl}
+                src={imageUrl}
                 alt="proyect"
               />
             </div>
-            <div className="modal-body">{props.description}</div>
+            <div className="modal-body">{description}</div>
 
             <div className="modal-body">
               <DescriptiveComponent
                 headerMessage="Repository:"
-                repoLink={props.githubUrl}
+                repoLink={githubUrl}
                 description="Repository Link at Github"
               />
               <DescriptiveComponent
                 headerMessage="Demo Link"
-                repoLink={props.demoUrl}
+                repoLink={demoUrl}
                 description="You can check the proyect by clicking here!."
               />
             </div>
+            <div className="modal-body">
+              <h5 className="text-start">Techs:</h5>
+
+            </div>
             <div className="modal-footer">
-              <button
+              <a
+                href="https://github.com/javyer12?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
                 className="btn btn-primary"
-                data-bs-target="#exampleModalToggle2"
-                data-bs-toggle="modal"
-              >
-                Open second modal
-              </button>
+              >See More Projects</a>
             </div>
           </div>
         </div>
@@ -62,15 +65,15 @@ export const Proyect = (props) => {
 
       <div
         className="card shadow"
-        data-bs-target={`#${props.dbTarget}`}
+        data-bs-target={`#${dbTarget}`}
         // className="card shadow" data-bs-target="#exampleModalToggle"
         data-bs-toggle="modal"
       >
-        <img src={props.imageUrl} className="card-img-top" alt="..." />
+        <img src={imageUrl} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.description}</p>
-          <a data-bs-target={`#${props.dbTarget}`} className="btn btn-outline-dark">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-text">{description}</p>
+          <a data-bs-target={`#${dbTarget}`} className="btn btn-outline-dark">
             More Details
           </a>
         </div>

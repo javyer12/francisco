@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
@@ -26,34 +26,32 @@ const socialMedia = [
     icon: <BsTwitter />,
     href: "https://twitter.com/FBollys",
   },
+  {
+    id: 5,
+    icon: "CV",
+    href: "https://www.canva.com/design/DAFS3vyQgWU/uD9bqDSt6j9qvsmIIshHxw/view",
+  },
 ];
 export default function Header() {
-  const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseOver = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovered(false);
-  };
   return (
-    <nav className="header navbar bg-white  fixed-top ">
+    <nav className="header navbar bg-white fixed-top p-2 ps-0">
       <div className="container-fluid d-flex ">
         <a
-          className="shadow navbar-brand bg-secondary-subtle rounded-circle p-2 text-success"
+          id="header_icon"
+          className="header-icon shadow navbar-brand bg-secondary-subtle rounded-circle p-2 text-success"
           href="/"
         >
           JM
         </a>
-        <div className="me-auto ">
+        <div className="me-auto d-flex justify-content-around social_media">
           {socialMedia.map((item) => (
             <a
+              id="header_icon"
+              target="_blank"
+              rel="noreferrer"
               key={item.id}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-              // style={{ backgroundColor: isHovered ? 'rgba(025,150,10,0.8)' : 'transparent' }}
-              className="text-end fs-5  ms-3 shadow text-success border border-light rounded-circle p-2"
+              className="text-decoration-none text-end fs-5 header-icon  ms-4 shadow text-success border border-light rounded-circle p-2"
               href={item.href}
             >
               {item.icon}
@@ -61,7 +59,7 @@ export default function Header() {
           ))}
         </div>
         <button
-          className="navbar-toggler border  border-secondary-subtle"
+          className=" menu navbar-toggler border  border-secondary-subtle"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
@@ -77,7 +75,7 @@ export default function Header() {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Content
+              Francisco's Content
             </h5>
             <button
               type="button"
@@ -103,8 +101,8 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#proyects">
-                  My Proyects
+                <a className="nav-link text-white" href="#projects">
+                  My Projects
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -119,21 +117,21 @@ export default function Header() {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-dark">
                   <li>
-                    <a className="dropdown-item" href="/">
-                      Action
+                    <a className="dropdown-item" href="https://platzi.com/p/franmurillo/">
+                      Platzi Certificates
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
+                    <a className="dropdown-item" href="https://replit.com/@javyer">
+                      Replit Profile
                     </a>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
+                    <a className="dropdown-item" href="https://dev.to/javyer12">
+                      Dev To
                     </a>
                   </li>
                 </ul>

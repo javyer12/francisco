@@ -1,0 +1,44 @@
+#header_icon {
+    animation: header_icon 2s ease 0s 1 normal forwards;
+}
+
+@keyframes header_icon {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+@media (max-width: 450px) {
+    .social_media {
+        width: 60vw !important;
+    }
+
+    .header-icon {
+        font-size: small !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}

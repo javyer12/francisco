@@ -12,7 +12,7 @@ export function NextButton(props) {
 export function ButtonLink(props) {
       return (
             <React.Fragment>
-                  <a type="button" href={props.destination}
+                  <a target="_blank" rel="noreferrer" type="button" href={props.destination}
                         className={props.classname}>{props.label}</a>
             </React.Fragment>
       )

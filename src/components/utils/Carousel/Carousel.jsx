@@ -23,7 +23,7 @@ export default function Carousel(props) {
             />
             <ButtonLink
               label="Watch CV"
-              classname="btn btn-outline-dark btn-lg ms-5 mt-5 carousel_button-label"
+              classname="btn btn-outline-dark btn-lg p-3  ms-5 mt-5 carousel_button-label"
               destination="https://www.canva.com/design/DAFS3vyQgWU/uD9bqDSt6j9qvsmIIshHxw/view"
             />
           </div>

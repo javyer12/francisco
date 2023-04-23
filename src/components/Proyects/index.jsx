@@ -1,7 +1,7 @@
 import React from "react";
-import { Proyect } from "./Proyect";
-import { NextButton } from "../utils/Buttons/Button";
-import './proyects.css';
+import { Project } from "./Project";
+import { ButtonLink } from "../utils/Buttons/Button";
+import './projects.css';
 
 // proyects images
 import contactCover from "../utils/C/contactCover.jpeg";
@@ -21,6 +21,7 @@ const dataProyects = [
     demoUrl: "https://getcontacts.vercel.app/",
     githubUrl: "https://github.com/javyer12/routing-contact",
     dbTarget: "firstProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const dataProyects = [
     demoUrl: "https://javyer12.github.io/async-landing/",
     githubUrl: "https://github.com/javyer12/async-landing",
     dbTarget: "secondProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ const dataProyects = [
     demoUrl: "https://www.npmjs.com/package/kgsjs",
     githubUrl: "https://github.com/javyer12/kgsjs",
     dbTarget: "thirdProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
 ];
 
@@ -54,6 +57,7 @@ const dataProyects2 = [
     demoUrl: "https://kanji-github-users.vercel.app/",
     githubUrl: "https://github.com/javyer12/userGit",
     dbTarget: "forthProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
   {
     id: 2,
@@ -64,6 +68,7 @@ const dataProyects2 = [
     demoUrl: "https://javagreen.netlify.app",
     githubUrl: "https://github.com/javyer12/green-a",
     dbTarget: "fifthProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
   {
     id: 3,
@@ -74,19 +79,20 @@ const dataProyects2 = [
     demoUrl: "https://github.com/javyer12/entityFramework",
     githubUrl: "https://github.com/javyer12/entityFramework",
     dbTarget: "sixthProyect",
+    moreProjects: 'https://github.com/javyer12/'
   },
 ];
 
-export function Proyects() {
+export function Projects() {
   return (
     <React.Fragment>
-      <nav id="proyects">
-        <div className="container text-center mb-4">
-          <h4 className="mt-3 text-success">Proyects</h4>
+      <nav id="projects">
+        <div className="container text-center mt-5 mb-4">
+          <h1 id="dev-project" className="mt-3 text-success">Proyects</h1>
           <div className="proyectsList row mt-3 mb-3">
             {dataProyects.map((item) => (
               <div className=" col" key={item.id}>
-                <Proyect
+                <Project
                   title={item.title}
                   description={item.description}
                   imageUrl={item.imageUrl}
@@ -100,7 +106,7 @@ export function Proyects() {
           <div className="proyectsList row mt-3 mb-3">
             {dataProyects2.map((item) => (
               <div className=" col" key={item.id}>
-                <Proyect
+                <Project
                   title={item.title}
                   description={item.description}
                   imageUrl={item.imageUrl}
@@ -111,11 +117,11 @@ export function Proyects() {
               </div>
             ))}
           </div>
-          <NextButton
-            destination="https://platzi.com/p/franmurillo/"
+          {/* <ButtonLink
+            destination="https://github.com/javyer12"
             label="More Proyects"
             classname="btn shadow btn-outline-dark  btn-lg  mt-4 mb-3 ms-5"
-          />
+          /> */}
         </div>
       </nav>
     </React.Fragment>

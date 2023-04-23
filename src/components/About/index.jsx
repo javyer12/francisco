@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import me from "../utils/C/me4.png";
+import me from "../utils/C/me5.png";
 import MoreInfo from "./MoreInfo";
 import { NextButton } from "../utils/Buttons/Button";
 
@@ -20,11 +20,11 @@ export default function About() {
   // user("luca", "dev", ...[ "Honduras", "Single" ])
   return (
     <React.Fragment>
-      <div id="about" className="row p-2 mb-5">
-        <div className="me-info col-4 m-4 mb-0 mt-0 text-center" data-bs-spy="scroll">
+      <div id="about" className="row p-2 m-4 mt-5">
+        <div className="me-info col-4 mb-0 mt-4 text-center" data-bs-spy="scroll">
           <nav className="bg-light  mb-0 shadow nav nav-pills flex-column">
-            <div className="me-photo text-center img-profile ">
-              <img src={me} alt="francisco murillo" className="" />
+            <div id="about-photo" className=" text-center img-profile ">
+              <img id="about_me" src={me} alt="francisco murillo" className="" />
             </div>
             <nav
               id="navbar-example3 "
@@ -35,14 +35,26 @@ export default function About() {
                 Front-End Developer
               </h6>
               <nav className="nav mt-4 mb-1 nav-pills d-flex d-flex justify-content-around">
-                <a className="nav-link shadow bg-dark my-1" href="https://github.com/javyer12">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link shadow bg-dark my-1"
+                  href="https://github.com/javyer12">
                   {" "}
                   <AiFillGithub className="text-white" />
                 </a>
-                <a className="nav-link shadow bg-dark my-1" href="https://www.linkedin.com/in/francisco-javier-murillo-guillen-6302bb203/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link shadow bg-dark my-1"
+                  href="https://www.linkedin.com/in/francisco-javier-murillo-guillen-6302bb203/">
                   <BsLinkedin className="text-white" />{" "}
                 </a>
-                <a className="nav-link shadow bg-dark my-1" href="#item-1-2">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link shadow bg-dark my-1"
+                  href="mailto:javyermurillo1gmail.com">
                   {" "}
                   <AiOutlineMail
                     href="mailto:franmurillo894@gmail.com"
@@ -50,13 +62,19 @@ export default function About() {
                   />
                 </a>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   className="nav-link shadow bg-dark my-1"
                   href="https://twitter.com/FBollys"
                 >
                   {" "}
                   <BsTwitter className="text-white" />
                 </a>
-                <a className="nav-link bg-dark my-1" href="#item-1-2">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="nav-link bg-dark my-1"
+                  href="https://api.whatsapp.com/send?phone=50499402691">
                   {" "}
                   <AiOutlineWhatsApp className="text-white" />
                 </a>
@@ -69,8 +87,8 @@ export default function About() {
           </nav>
         </div>
 
-        <div className=" me-description col-7  mt-0 shadow p-0 ">
-          <h4 className="text-success text-start m-3">About Me</h4>
+        <div className=" me-description col-8 mt-4 shadow p-0 ">
+          <h2 id="about_me" className="text-success text-start m-3">About Me</h2>
           <div
             data-bs-spy="scroll"
             data-bs-target="#navbar-example3"
@@ -79,39 +97,30 @@ export default function About() {
             tabIndex="0"
           >
             <div id="item-1-1">
-              <div className="m-3 ">
-                <p className="text-black">
-                  Soy un desarrollador web y de aplicaciones móviles junior con
+              <div className="m-5 ">
+                <p className="text-black text-start lh-base">
+                  Soy un desarrollador Front-End Junior con
                   una pasión por crear soluciones innovadoras y atractivas para
                   la web y los dispositivos móviles.{" "}
                   <small className="text-success">
-                    Con experiencia en HTML, CSS, JavaScript, Flutter, React
+                    Con experiencia en HTML, CSS, JavaScript, Next js, React
                   </small>
-                  , me esfuerzo por producir código limpio, eficiente y
+                  ; Estoy en constante aprendizaje para crear código limpio, eficiente y
                   accesible tanto para la web como para aplicaciones móviles. Mi
                   experiencia incluye el desarrollo de sitios web y aplicaciones
-                  móviles para pequeñas empresas y proyectos personales. Me
-                  enfoco en garantizar una experiencia de usuario excelente en
+                  móviles en proyectos personales. Me enfoco en garantizar una experiencia de usuario excelente en
                   todos los dispositivos, trabajando de manera colaborativa con
                   diseñadores y otros desarrolladores para alcanzar los
-                  objetivos de proyecto. Además, estoy comprometido con el
-                  aprendizaje constante y estoy dispuesto a adaptarme a nuevas
-                  tecnologías y herramientas para mejorar mis habilidades y
-                  aportar valor a los proyectos. Me encanta trabajar en equipo y
-                  estoy dispuesto a hacer lo necesario para lograr el éxito del
-                  proyecto.
-                  Con un enfoque en la atención al detalle y la
-                  búsqueda constante de soluciones eficientes, estoy listo para
-                  enfrentar cualquier desafío y ayudar a mis clientes a alcanzar
-                  sus objetivos en línea.
+                  objetivos de proyecto.
                 </p>
-                <div className="d-flex   justify-content-center">
+
+                {/* <div className="d-flex   justify-content-center">
                   <NextButton
                     label="Dev Tools"
                     classname="btn shadow btn-outline-dark  btn-lg  ms-5"
                     destination="#tools"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
