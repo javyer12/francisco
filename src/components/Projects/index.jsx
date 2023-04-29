@@ -4,12 +4,12 @@ import { ButtonLink } from "../utils/Buttons/Button";
 import './projects.css';
 
 // proyects images
-import contactCover from "../utils/C/contactCover.jpeg";
-import wandaLanding from "../utils/C/wandaLanding.jpeg";
+import contactCover from "../utils/C/contact.png";
+import wandaLanding from "../utils/C/wanda.png";
 import kgsjs from "../utils/C/kgsjs.jpeg";
-import greena from "../utils/C/green.jpeg";
+import greena from "../utils/C/green-a.png";
 import csharpcrud from "../utils/C/csharp-crud.jpeg";
-import kanjiapp from '../utils/C/kanjiapp.jpeg';
+import kanjiapp from '../utils/C/git_user_demo.png';
 
 const dataProyects = [
   {
@@ -88,8 +88,8 @@ export function Projects() {
     <React.Fragment>
       <nav id="projects">
         <div className="container text-center mt-5 mb-4">
-          <h1 id="dev-project" className="mt-3 text-success">Proyects</h1>
-          <div className="proyectsList row mt-3 mb-3">
+          <h1 id="dev-project" className="mt-3 mb-4 text-success">Proyects</h1>
+          <div className="proyectsList row mt-5 mb-3">
             {dataProyects.map((item) => (
               <div className=" col" key={item.id}>
                 <Project

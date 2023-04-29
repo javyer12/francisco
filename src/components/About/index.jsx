@@ -11,13 +11,7 @@ import { BsTwitter } from "react-icons/bs";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function About() {
-  // ...moreInfo is rest operator, parametro  rest si es un arreglo real
-  // const user = (name, career, ...moreInfo) => {
-  // console.log(name + career);
-  // console.log(moreInfo);
-  // }
-  //  ...[ "Honduras", "Single" ] is spreed operator
-  // user("luca", "dev", ...[ "Honduras", "Single" ])
+
   return (
     <React.Fragment>
       <div id="about" className="row p-2 m-4 mt-5">
@@ -34,11 +28,11 @@ export default function About() {
               <h6 className="text-white bg-dark rounded p-2">
                 Front-End Developer
               </h6>
-              <nav className="nav mt-4 mb-1 nav-pills d-flex d-flex justify-content-around">
+              <nav className=" nav mt-4 mb-1 nav-pills d-flex d-flex justify-content-around">
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  className="nav-link shadow bg-dark my-1"
+                  className="social_link nav-link shadow bg-dark my-1"
                   href="https://github.com/javyer12">
                   {" "}
                   <AiFillGithub className="text-white" />
@@ -87,8 +81,8 @@ export default function About() {
           </nav>
         </div>
 
-        <div className=" me-description col-8 mt-4 shadow p-0 ">
-          <h2 id="about_me" className="text-success text-start m-3">About Me</h2>
+        <div className=" me-description mt-4 col-8 shadow ">
+          <h2 id="about_me" className="text-success text-center pt-3 mb-0 m-4">About Me</h2>
           <div
             data-bs-spy="scroll"
             data-bs-target="#navbar-example3"
@@ -97,7 +91,7 @@ export default function About() {
             tabIndex="0"
           >
             <div id="item-1-1">
-              <div className="m-5 ">
+              <div className="m-3">
                 <p className="text-black text-start lh-base">
                   Soy un desarrollador Front-End Junior con
                   una pasión por crear soluciones innovadoras y atractivas para

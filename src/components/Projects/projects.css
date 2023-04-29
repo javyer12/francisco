@@ -1,4 +1,7 @@
 #dev-project {
+	font-size: 2rem !important;
+	margin-top: 3rem !important;
+	margin-bottom: -2rem !important;
 	animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
@@ -63,7 +66,7 @@
 	}
 
 	.proyectsList div {
-		margin-top: .9rem !important;
+		margin-top: .5rem !important;
 	}
 }
 

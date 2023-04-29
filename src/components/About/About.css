@@ -1,103 +1,103 @@
- #about_me {
-       animation: ME 5s ease 0s 1 normal forwards;
- }
+/* ------------------------- */
+#about_me {
+      animation: ME 5s ease 0s 1 normal forwards;
+}
 
- @keyframes ME {
-       0% {
-             animation-timing-function: ease-in;
-             opacity: 1;
-             transform: translateY(-45px);
-       }
+@keyframes ME {
+      0% {
+            animation-timing-function: ease-in;
+            opacity: 1;
+            transform: translateY(-45px);
+      }
 
-       24% {
-             opacity: 1;
-       }
+      24% {
+            opacity: 1;
+      }
 
-       40% {
-             animation-timing-function: ease-in;
-             transform: translateY(-24px);
-       }
+      40% {
+            animation-timing-function: ease-in;
+            transform: translateY(-24px);
+      }
 
-       65% {
-             animation-timing-function: ease-in;
-             transform: translateY(-12px);
-       }
+      65% {
+            animation-timing-function: ease-in;
+            transform: translateY(-12px);
+      }
 
-       82% {
-             animation-timing-function: ease-in;
-             transform: translateY(-6px);
-       }
+      82% {
+            animation-timing-function: ease-in;
+            transform: translateY(-6px);
+      }
 
-       93% {
-             animation-timing-function: ease-in;
-             transform: translateY(-4px);
-       }
+      93% {
+            animation-timing-function: ease-in;
+            transform: translateY(-4px);
+      }
 
-       25%,
-       55%,
-       75%,
-       87% {
-             animation-timing-function: ease-out;
-             transform: translateY(0px);
-       }
+      25%,
+      55%,
+      75%,
+      87% {
+            animation-timing-function: ease-out;
+            transform: translateY(0px);
+      }
 
-       100% {
-             animation-timing-function: ease-out;
-             opacity: 1;
-             transform: translateY(0px);
-       }
- }
+      100% {
+            animation-timing-function: ease-out;
+            opacity: 1;
+            transform: translateY(0px);
+      }
+}
 
- .img-profile img {
-       width: 50% !important;
-       height: 60% !important;
-       /* margin-top: -5rem !important; */
- }
+.img-profile img {
+      width: 50% !important;
+      height: 60% !important;
+      /* margin-top: -5rem !important; */
+}
 
- @media (max-width: 500px) {
+@media (max-width: 500px) {
 
-       #about {
-             display: block !important;
-       }
+      #about {
+            display: block !important;
+            margin: 4rem 0 0 0 !important;
+            padding: 0% !important;
+      }
 
-       .me-info {
-             width: 90vw !important;
-       }
+      .me-info {
+            width: 95vw !important;
+            margin: auto !important;
+      }
 
-       /* .img-profile img {
+      h5 {
+            font-size: 2rem !important;
+      }
+
+      .me-description {
+            width: 90vw;
+            margin: auto !important;
+      }
+}
+
+@media (max-width: 720px) {
+
+      #about {
+            display: block !important;
+      }
+
+      .me-info {
+            width: 90vw !important;
+      }
+
+      /* .img-profile img {
             visibility: hidden;
             margin-top: -70% !important;
       } */
-       h5 {
-             font-size: 2rem !important;
-       }
+      h5 {
+            font-size: 2rem !important;
+      }
 
-       .me-description {
-             width: 90vw;
-             margin: auto !important;
-       }
- }
-
- @media (max-width: 720px) {
-
-       #about {
-             display: block !important;
-       }
-
-       .me-info {
-             width: 90vw !important;
-       }
-
-       /* .img-profile img {
-            visibility: hidden;
-            margin-top: -70% !important;
-      } */
-       h5 {
-             font-size: 2rem !important;
-       }
-
-       .me-description {
-             width: 90vw;
-             margin: auto !important;
-       }
- }
+      .me-description {
+            width: 90vw;
+            margin: auto !important;
+      }
+}

@@ -15,11 +15,9 @@ const MoreInfo = () => {
       return (
             <React.Fragment >
                   {moreInfoAbountMe.map(item => (
-                        <nav key={item.id} className='ms-5 p-2 d-flex w-100 nav nav-pills'>
-                              <div>
-                                    <small className='text-white text-center'>{item.title}</small>
-                                    <p className='text-white'>{item.info}</p>
-                              </div>
+                        <nav key={item.id} className=' p-2 d-block w-100 nav nav-pills'>
+                              <small className='text-white text-center'>{item.title}</small>
+                              <p className='text-white'>{item.info}</p>
                         </nav>
                   ))}
             </React.Fragment>

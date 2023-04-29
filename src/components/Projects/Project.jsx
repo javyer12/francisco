@@ -44,7 +44,7 @@ export const Project = (props) => {
               <DescriptiveComponent
                 headerMessage="Demo Link"
                 repoLink={demoUrl}
-                description="You can check the proyect by clicking here!."
+                description="Check the proyect, Onclick here!."
               />
             </div>
             <div className="modal-body">
