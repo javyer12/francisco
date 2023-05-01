@@ -1,6 +1,5 @@
 import React from "react";
 import { Project } from "./Project";
-import { ButtonLink } from "../utils/Buttons/Button";
 import './projects.css';
 
 // proyects images
@@ -10,6 +9,14 @@ import kgsjs from "../utils/C/kgsjs.jpeg";
 import greena from "../utils/C/green-a.png";
 import csharpcrud from "../utils/C/csharp-crud.jpeg";
 import kanjiapp from '../utils/C/git_user_demo.png';
+
+
+// icons
+import { FaReact } from 'react-icons/fa';
+import { SiJavascript } from 'react-icons/si';
+import { SiReactrouter } from 'react-icons/si';
+import { SiVercel } from 'react-icons/si';
+import { FaSass } from 'react-icons/fa';
 
 const dataProyects = [
   {
@@ -21,7 +28,34 @@ const dataProyects = [
     demoUrl: "https://getcontacts.vercel.app/",
     githubUrl: "https://github.com/javyer12/routing-contact",
     dbTarget: "firstProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
   {
     id: 2,
@@ -32,7 +66,34 @@ const dataProyects = [
     demoUrl: "https://javyer12.github.io/async-landing/",
     githubUrl: "https://github.com/javyer12/async-landing",
     dbTarget: "secondProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
   {
     id: 3,
@@ -43,7 +104,34 @@ const dataProyects = [
     demoUrl: "https://www.npmjs.com/package/kgsjs",
     githubUrl: "https://github.com/javyer12/kgsjs",
     dbTarget: "thirdProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
 ];
 
@@ -57,7 +145,34 @@ const dataProyects2 = [
     demoUrl: "https://kanji-github-users.vercel.app/",
     githubUrl: "https://github.com/javyer12/userGit",
     dbTarget: "forthProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
   {
     id: 2,
@@ -68,7 +183,34 @@ const dataProyects2 = [
     demoUrl: "https://javagreen.netlify.app",
     githubUrl: "https://github.com/javyer12/green-a",
     dbTarget: "fifthProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
   {
     id: 3,
@@ -79,10 +221,37 @@ const dataProyects2 = [
     demoUrl: "https://github.com/javyer12/entityFramework",
     githubUrl: "https://github.com/javyer12/entityFramework",
     dbTarget: "sixthProyect",
-    moreProjects: 'https://github.com/javyer12/'
+    moreProjects: 'https://github.com/javyer12/',
+    proyectIcons: [
+      {
+        classname: "text-success",
+        src: <FaReact />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiJavascript />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiReactrouter />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <SiVercel />,
+        alt: "Frontend Techs"
+      },
+      {
+        classname: "text-success",
+        src: <FaSass />,
+        alt: "Frontend Techs"
+      }
+    ]
   },
 ];
-
+console.log()
 export function Projects() {
   return (
     <React.Fragment>
@@ -91,7 +260,7 @@ export function Projects() {
           <h1 id="dev-project" className="mt-3 mb-4 text-success">Proyects</h1>
           <div className="proyectsList row mt-5 mb-3">
             {dataProyects.map((item) => (
-              <div className=" col" key={item.id}>
+              <div className="col" key={item.id}>
                 <Project
                   title={item.title}
                   description={item.description}
@@ -99,6 +268,7 @@ export function Projects() {
                   dbTarget={item.dbTarget}
                   githubUrl={item.githubUrl}
                   demoUrl={item.demoUrl}
+                  proyectIcons={item.proyectIcons}
                 />
               </div>
             ))}

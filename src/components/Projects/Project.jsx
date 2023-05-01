@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import DescriptiveComponent from "../utils/components/DescriptiveComponent";
-import { ButtonLink } from "../utils/Buttons/Button";
+import Icons from "../utils/Icons/Icons";
+
 export const Project = (props) => {
-  const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, moreProjects } = props;
+  const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, moreProjects, proyectIcons } = props;
   return (
     <React.Fragment>
       <div
@@ -49,14 +50,19 @@ export const Project = (props) => {
             </div>
             <div className="modal-body">
               <h5 className="text-start">Techs:</h5>
-
+              {/* tech icons */}
+              <div>
+                {proyectIcons.map((item) => {
+                  <Icons classname={item.classname} src={item.src} alt="" />
+                })}
+              </div>
             </div>
             <div className="modal-footer">
               <a
                 href="https://github.com/javyer12?tab=repositories"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-primary"
+                className="btn btn-primary bg-black"
               >See More Projects</a>
             </div>
           </div>
@@ -66,7 +72,6 @@ export const Project = (props) => {
       <div
         className="card shadow"
         data-bs-target={`#${dbTarget}`}
-        // className="card shadow" data-bs-target="#exampleModalToggle"
         data-bs-toggle="modal"
       >
         <img src={imageUrl} className="card-img-top" alt="..." />
