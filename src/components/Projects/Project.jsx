@@ -3,7 +3,8 @@ import DescriptiveComponent from "../utils/components/DescriptiveComponent";
 import Icons from "../utils/Icons/Icons";
 
 export const Project = (props) => {
-  const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, moreProjects, proyectIcons } = props;
+  const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, proyectIcons } = props;
+
   return (
     <React.Fragment>
       <div
@@ -51,10 +52,10 @@ export const Project = (props) => {
             <div className="modal-body">
               <h5 className="text-start">Techs:</h5>
               {/* tech icons */}
-              <div>
-                {proyectIcons.map((item) => {
-                  <Icons classname={item.classname} src={item.src} alt="" />
-                })}
+              <div className="d-flex w-25  border-none">
+                {proyectIcons.map((item) => (
+                  <img className='img-thumbnail w-50 m-2 border-1 border-dark  shadow-sm rounded-circle rounded' src={item.src} alt={item.alt} />
+                ))}
               </div>
             </div>
             <div className="modal-footer">

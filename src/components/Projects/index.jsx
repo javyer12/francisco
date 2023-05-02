@@ -11,13 +11,6 @@ import csharpcrud from "../utils/C/csharp-crud.jpeg";
 import kanjiapp from '../utils/C/git_user_demo.png';
 
 
-// icons
-import { FaReact } from 'react-icons/fa';
-import { SiJavascript } from 'react-icons/si';
-import { SiReactrouter } from 'react-icons/si';
-import { SiVercel } from 'react-icons/si';
-import { FaSass } from 'react-icons/fa';
-
 const dataProyects = [
   {
     id: 1,
@@ -28,32 +21,26 @@ const dataProyects = [
     demoUrl: "https://getcontacts.vercel.app/",
     githubUrl: "https://github.com/javyer12/routing-contact",
     dbTarget: "firstProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
-        classname: "text-success",
-        src: <FaReact />,
-        alt: "Frontend Techs"
+        src: "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png",
+        alt: "React"
       },
       {
-        classname: "text-success",
-        src: <SiJavascript />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+        alt: "Javascript"
       },
       {
-        classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
+        src: "https://reactrouter.com/_brand/react-router-mark-color.png",
+        alt: "React Router Icon"
       },
       {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
+        src: "https://cdn-icons-png.flaticon.com/512/5968/5968550.png",
+        alt: "Sass Icon"
       },
       {
-        classname: "text-success",
-        src: <FaSass />,
-        alt: "Frontend Techs"
+        src: "https://karmanivero.us/assets/images/logo-vercel.png",
+        alt: "Vercel Icon"
       }
     ]
   },
@@ -66,32 +53,22 @@ const dataProyects = [
     demoUrl: "https://javyer12.github.io/async-landing/",
     githubUrl: "https://github.com/javyer12/async-landing",
     dbTarget: "secondProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
-        classname: "text-success",
-        src: <FaReact />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+        alt: "HTML"
       },
       {
-        classname: "text-success",
-        src: <SiJavascript />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
+        alt: "Bootstrap Logo",
       },
       {
-        classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+        alt: " Javascript"
       },
       {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <FaSass />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png",
+        alt: " Github pages"
       }
     ]
   },
@@ -104,31 +81,17 @@ const dataProyects = [
     demoUrl: "https://www.npmjs.com/package/kgsjs",
     githubUrl: "https://github.com/javyer12/kgsjs",
     dbTarget: "thirdProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
-        classname: "text-success",
-        src: <FaReact />,
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+        alt: "JavaScript"
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png",
         alt: "Frontend Techs"
       },
       {
-        classname: "text-success",
-        src: <SiJavascript />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <FaSass />,
+        src: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png",
         alt: "Frontend Techs"
       }
     ]
@@ -145,32 +108,22 @@ const dataProyects2 = [
     demoUrl: "https://kanji-github-users.vercel.app/",
     githubUrl: "https://github.com/javyer12/userGit",
     dbTarget: "forthProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
-        classname: "text-success",
-        src: <FaReact />,
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png",
+        alt: "Bootstrap Logo",
+      },
+      {
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+        alt: " Javascript"
+      },
+      {
+        src: "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png",
         alt: "Frontend Techs"
       },
       {
-        classname: "text-success",
-        src: <SiJavascript />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <FaSass />,
-        alt: "Frontend Techs"
+        src: "https://karmanivero.us/assets/images/logo-vercel.png",
+        alt: "Vercel Icon"
       }
     ]
   },
@@ -183,33 +136,24 @@ const dataProyects2 = [
     demoUrl: "https://javagreen.netlify.app",
     githubUrl: "https://github.com/javyer12/green-a",
     dbTarget: "fifthProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
-        classname: "text-success",
-        src: <FaReact />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png",
+        alt: "Javascript"
       },
       {
-        classname: "text-success",
-        src: <SiJavascript />,
-        alt: "Frontend Techs"
+        src: "https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/css-3-512.png",
+        alt: " CSS"
       },
       {
-        classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+        alt: "HTML"
       },
       {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <FaSass />,
-        alt: "Frontend Techs"
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png",
+        alt: " Github pages"
       }
+
     ]
   },
   {
@@ -221,37 +165,25 @@ const dataProyects2 = [
     demoUrl: "https://github.com/javyer12/entityFramework",
     githubUrl: "https://github.com/javyer12/entityFramework",
     dbTarget: "sixthProyect",
-    moreProjects: 'https://github.com/javyer12/',
     proyectIcons: [
       {
         classname: "text-success",
-        src: <FaReact />,
+        src: "https://www.netgen.co.za/wp-content/uploads/2022/03/C-image-for-Netgen-1024x1024.png",
         alt: "Frontend Techs"
       },
       {
         classname: "text-success",
-        src: <SiJavascript />,
+        src: "https://images.tute.io/media/topics/icons/entity-framework.png",
         alt: "Frontend Techs"
       },
       {
         classname: "text-success",
-        src: <SiReactrouter />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <SiVercel />,
-        alt: "Frontend Techs"
-      },
-      {
-        classname: "text-success",
-        src: <FaSass />,
+        src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png",
         alt: "Frontend Techs"
       }
     ]
   },
 ];
-console.log()
 export function Projects() {
   return (
     <React.Fragment>
@@ -283,6 +215,8 @@ export function Projects() {
                   dbTarget={item.dbTarget}
                   githubUrl={item.githubUrl}
                   demoUrl={item.demoUrl}
+                  proyectIcons={item.proyectIcons}
+
                 />
               </div>
             ))}

@@ -93,6 +93,8 @@ export default function About() {
             <div id="item-1-1">
               <div className="m-3">
                 <p className="text-black text-start lh-base">
+                  Self-taught person, Passionate about software development, focused on creating websites with technologies such as JavaScript, React Js, Node Js, Bootstrap, Material-ui, React Router, among others. Enthusiast of digital development and lover of art and technology.
+
                   Soy un desarrollador Front-End Junior con
                   una pasión por crear soluciones innovadoras y atractivas para
                   la web y los dispositivos móviles.{" "}
@@ -107,7 +109,6 @@ export default function About() {
                   diseñadores y otros desarrolladores para alcanzar los
                   objetivos de proyecto.
                 </p>
-
                 {/* <div className="d-flex   justify-content-center">
                   <NextButton
                     label="Dev Tools"

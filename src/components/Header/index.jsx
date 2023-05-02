@@ -51,7 +51,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
               key={item.id}
-              className="text-decoration-none text-end fs-5 header-icon  ms-4 shadow text-success border border-light rounded-circle p-2"
+              className="text-decoration-none text-end fs-5 header-icon  ms-4 shadow border border-light text-success p-2 pt-1 pb-1 rounded-circle "
               href={item.href}
             >
               {item.icon}
