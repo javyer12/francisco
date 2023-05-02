@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 import DescriptiveComponent from "../utils/components/DescriptiveComponent";
-import Icons from "../utils/Icons/Icons";
 
 export const Project = (props) => {
   const { dbTarget, title, description, imageUrl, demoUrl, githubUrl, proyectIcons } = props;
 
+  function generarId() {
+    const caracteres = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    const longitud = 8;
+    let id = '';
+
+    for (let i = 0; i < longitud; i++) {
+      const indice = Math.floor(Math.random() * caracteres.length);
+      id += caracteres[ indice ];
+    }
+
+    return id;
+  }
   return (
     <React.Fragment>
       <div
@@ -54,7 +65,7 @@ export const Project = (props) => {
               {/* tech icons */}
               <div className="d-flex w-25  border-none">
                 {proyectIcons.map((item) => (
-                  <img className='img-thumbnail w-50 m-2 border-1 border-dark  shadow-sm rounded-circle rounded' src={item.src} alt={item.alt} />
+                  <img key={generarId()} className='img-thumbnail w-50 m-2 border-1 border-dark  shadow-sm rounded-circle rounded' src={item.src} alt={item.alt} />
                 ))}
               </div>
             </div>

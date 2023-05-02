@@ -123,10 +123,11 @@ const currentlyLearning = [
 ];
 
 export default function Tools() {
+
   return (
     <React.Fragment>
       <nav id="tools">
-        <div className=" container  text-center mb-4">
+        <div className=" container  text-center mb-4" >
           <h1 id="dev-tool" className="mt-3 mb-3 text-center text-success">Dev Tools</h1>
           <div className="devTools row mt-3 mb-3">
             <div className="col ">

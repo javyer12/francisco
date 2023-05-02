@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout/index';
-import { registerImage } from './observer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

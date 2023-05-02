@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./About.css";
 import me from "../utils/C/me5.png";
 import MoreInfo from "./MoreInfo";
-import { NextButton } from "../utils/Buttons/Button";
+import { useSpring, animated } from '@react-spring/web';
 
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
@@ -11,10 +11,31 @@ import { BsTwitter } from "react-icons/bs";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function About() {
+  const targetRef = useRef(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          let bg = document.getElementById('about')
+          bg.addEventListener('mouseenter', () => {
+            console.log('it left')
+          })
+          console.log('El elemento está dentro del área de intersección');
+        } else {
+          console.log('El elemento está fuera del área de intersección');
+        }
+      });
+    });
+
+    observer.observe(targetRef.current);
+    return () => {
+      observer.unobserve(targetRef.current);
+    };
+  }, []);
 
   return (
     <React.Fragment>
-      <div id="about" className="row p-2 m-4 mt-5">
+      <animated.div id="about" className="row p-2 m-4 mt-5" ref={targetRef}>
         <div className="me-info col-4 mb-0 mt-4 text-center" data-bs-spy="scroll">
           <nav className="bg-light  mb-0 shadow nav nav-pills flex-column">
             <div id="about-photo" className=" text-center img-profile ">
@@ -81,7 +102,7 @@ export default function About() {
           </nav>
         </div>
 
-        <div className=" me-description mt-4 col-8 shadow ">
+        <animated.div className=" me-description mt-4 col-8 shadow ">
           <h2 id="about_me" className="text-success text-center pt-3 mb-0 m-4">About Me</h2>
           <div
             data-bs-spy="scroll"
@@ -119,8 +140,8 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </animated.div>
+      </animated.div>
     </React.Fragment>
   );
 }
