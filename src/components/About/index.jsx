@@ -37,7 +37,7 @@ export default function About() {
     <React.Fragment>
       <animated.div id="about" className="row p-2 m-4 mt-5" ref={targetRef}>
         <div className="me-info col-4 mb-0 mt-4 text-center" data-bs-spy="scroll">
-          <nav className="bg-light  mb-0 shadow nav nav-pills flex-column">
+          <nav className="bg-white shadow  mb-0 nav nav-pills flex-column">
             <div id="about-photo" className=" text-center img-profile ">
               <img id="about_me" src={me} alt="francisco murillo" className="" />
             </div>
@@ -114,21 +114,20 @@ export default function About() {
             <div id="item-1-1">
               <div className="m-3">
                 <p className="text-black text-start lh-base">
-                  Self-taught person, Passionate about software development, focused on creating websites with technologies such as JavaScript, React Js, Node Js, Bootstrap, Material-ui, React Router, among others. Enthusiast of digital development and lover of art and technology.
-
-                  Soy un desarrollador Front-End Junior con
-                  una pasión por crear soluciones innovadoras y atractivas para
-                  la web y los dispositivos móviles.{" "}
+                  Self-taught person, Passionate about software development,
+                  focused on creating websites with technologies such as
+                  {" "}
                   <small className="text-success">
-                    Con experiencia en HTML, CSS, JavaScript, Next js, React
+                    JavaScript, React Js, Node Js, Bootstrap, Material-ui, React Router,
                   </small>
-                  ; Estoy en constante aprendizaje para crear código limpio, eficiente y
-                  accesible tanto para la web como para aplicaciones móviles. Mi
-                  experiencia incluye el desarrollo de sitios web y aplicaciones
-                  móviles en proyectos personales. Me enfoco en garantizar una experiencia de usuario excelente en
-                  todos los dispositivos, trabajando de manera colaborativa con
-                  diseñadores y otros desarrolladores para alcanzar los
-                  objetivos de proyecto.
+                  among others. Enthusiast of digital development and lover of art and technology.
+                </p>
+                <p className="text-black text-start lh-base">
+
+                  I am constantly learning to create clean, efficient and accessible code for both web and mobile applications.
+                  My experience includes the development of websites and mobile applications in personal projects.
+                  I focus on ensuring a great user experience across all devices,
+                  working collaboratively with designers and other developers to achieve project goals.
                 </p>
                 {/* <div className="d-flex   justify-content-center">
                   <NextButton

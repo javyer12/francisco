@@ -189,7 +189,7 @@ export function Projects() {
     <React.Fragment>
       <nav id="projects">
         <div className="container text-center mt-5 mb-4">
-          <h1 id="dev-project" className="mt-3 mb-4 text-success">Proyects</h1>
+          <h1 id="dev-project" className="mt-3 mb-4 text-success">Projects</h1>
           <div className="proyectsList row mt-5 mb-3">
             {dataProyects.map((item) => (
               <div className="col" key={item.id}>
