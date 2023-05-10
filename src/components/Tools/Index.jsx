@@ -128,7 +128,7 @@ export default function Tools() {
     <React.Fragment>
       <nav id="tools">
         <div className=" container  text-center mb-4" >
-          <h1 id="dev-tool" className="mt-3 mb-3 text-center text-success">Dev Tools</h1>
+          <h3 id="dev-tool" className="mt-3 mb-3 text-center text-info">Dev Tools</h3>
           <div className="devTools row mt-3 mb-3">
             <div className="col ">
               <div className="bg-white border mt-2 border-light-subtle border-2 shadow rounded p-3">

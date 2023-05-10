@@ -1,0 +1,43 @@
+#head {
+    height: 90vh;
+}
+
+.img-side {
+    height: 99vh;
+}
+
+.profile {
+    margin-top: 5%;
+    border: .2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 70%;
+    width: 99%;
+}
+
+.profile img {
+    margin: auto;
+    height: 99%;
+    width: 99%;
+    border-radius: 50%;
+}
+
+/* ------Medias queries--------- */
+@media (max-width: 720px) {
+    #head {
+        padding: auto;
+        margin: 0;
+    }
+
+    .aboutme {
+        display: block;
+    }
+
+    .img-side,
+    .description {
+        margin-top: 2%;
+        height: max-content;
+        width: 100vw;
+
+    }
+
+}
