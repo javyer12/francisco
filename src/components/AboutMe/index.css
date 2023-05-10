@@ -26,6 +26,7 @@
     #head {
         padding: auto;
         margin: 0;
+        height: max-content;
     }
 
     .aboutme {
