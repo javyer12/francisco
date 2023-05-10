@@ -82,7 +82,7 @@ export const Project = (props) => {
       </div>
 
       <div
-        className="card shadow"
+        className="card shadow item_animated"
         data-bs-target={`#${dbTarget}`}
         data-bs-toggle="modal"
       >
@@ -95,7 +95,6 @@ export const Project = (props) => {
           </a>
         </div>
       </div>
-      {/* <button class="btn btn-warning" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> */}
     </React.Fragment>
   );
 };

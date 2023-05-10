@@ -221,11 +221,7 @@ export function Projects() {
               </div>
             ))}
           </div>
-          {/* <ButtonLink
-            destination="https://github.com/javyer12"
-            label="More Proyects"
-            classname="btn shadow btn-outline-dark  btn-lg  mt-4 mb-3 ms-5"
-          /> */}
+
         </div>
       </nav>
     </React.Fragment>

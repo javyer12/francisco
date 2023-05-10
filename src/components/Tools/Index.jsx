@@ -131,12 +131,12 @@ export default function Tools() {
           <h1 id="dev-tool" className="mt-3 mb-3 text-center text-success">Dev Tools</h1>
           <div className="devTools row mt-3 mb-3">
             <div className="col ">
-              <div className="border mt-2 border-light-subtle border-2 shadow rounded p-3">
+              <div className="bg-white border mt-2 border-light-subtle border-2 shadow rounded p-3">
                 <h4 className="bg-dark shadow text-white m-2 mb-4">
                   Front-End
                 </h4>
                 <div>
-                  <div>
+                  <div >
                     {frontTools.map((item) => (
                       <nav key={item.id}>
                         <FeatureComponent
@@ -153,7 +153,7 @@ export default function Tools() {
               </div>
             </div>
             <div className="col ">
-              <div className="border mt-2 border-light-subtle border-2 shadow rounded  p-3">
+              <div className="bg-white border mt-2 border-light-subtle border-2 shadow rounded  p-3">
                 <h4 className="bg-dark shadow text-white m-2 mb-4">Back-End</h4>
                 <div>
                   <div className="">
@@ -173,7 +173,7 @@ export default function Tools() {
               </div>
             </div>
             <div className="col ">
-              <div className="border mt-2 border-light-subtle border-2 shadow rounded  p-3">
+              <div className="bg-white border mt-2 border-light-subtle border-2 shadow rounded  p-3">
                 <h4 className="bg-dark shadow text-white m-2 mb-4">
                   New Tools
                 </h4>

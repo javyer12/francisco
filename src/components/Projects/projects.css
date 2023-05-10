@@ -1,13 +1,13 @@
-#dev-project {
-	font-size: 2rem !important;
+.item_animated:hover {
 	margin-top: 3rem !important;
 	margin-bottom: -2rem !important;
 	animation: myAnim 2s ease 0s 1 normal forwards;
+
 }
 
 @keyframes myAnim {
 	0% {
-		animation-timing-function: ease-in;
+		animation-timing-function: ease-in-out;
 		opacity: 1;
 		transform: translateY(-45px);
 	}
@@ -17,17 +17,17 @@
 	}
 
 	40% {
-		animation-timing-function: ease-in;
+		animation-timing-function: ease-in-out;
 		transform: translateY(-24px);
 	}
 
 	65% {
-		animation-timing-function: ease-in;
+		animation-timing-function: ease-in-out;
 		transform: translateY(-12px);
 	}
 
 	82% {
-		animation-timing-function: ease-in;
+		animation-timing-function: ease-in-out;
 		transform: translateY(-6px);
 	}
 
@@ -36,13 +36,6 @@
 		transform: translateY(-4px);
 	}
 
-	25%,
-	55%,
-	75%,
-	87% {
-		animation-timing-function: ease-out;
-		transform: translateY(0px);
-	}
 
 	100% {
 		animation-timing-function: ease-out;
@@ -51,6 +44,7 @@
 	}
 }
 
+/* -----------------MEDIA QUERIES----------- */
 @media (max-width: 500px) {
 	.container {
 		margin: 0 !important;

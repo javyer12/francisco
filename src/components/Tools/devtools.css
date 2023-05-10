@@ -1,3 +1,7 @@
+#tool {
+	height: 99vh !important;
+}
+
 #dev-tool {
 	font-size: 2rem !important;
 	animation: myAnim 2s ease 0s 1 normal forwards;
@@ -49,6 +53,7 @@
 	}
 }
 
+/* -------------------MEDIAS QUERIES-------------- */
 @media (max-width: 720px) {
 	#tools {
 		width: 95vw !important;

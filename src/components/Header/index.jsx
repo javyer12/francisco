@@ -51,7 +51,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
               key={item.id}
-              className="text-decoration-none text-end fs-5 header-icon  ms-4 shadow border border-light text-success p-2 pt-1 pb-1 rounded-circle "
+              className="text-decoration-none bg-white text-end fs-5 header-icon  ms-4 shadow border border-light text-success p-2 pt-1 pb-1 rounded-circle "
               href={item.href}
             >
               {item.icon}
@@ -59,7 +59,7 @@ export default function Header() {
           ))}
         </div>
         <button
-          className=" menu navbar-toggler border  border-secondary-subtle"
+          className=" menu navbar-toggler border bg-white border-secondary-subtle"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"

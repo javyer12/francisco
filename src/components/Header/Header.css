@@ -31,6 +31,7 @@
     }
 }
 
+/* --------------------------MEDIA QUERIES----------- */
 @media (max-width: 450px) {
     .social_media {
         width: 60vw !important;

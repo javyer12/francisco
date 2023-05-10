@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./About.css";
 import me from "../utils/C/me5.png";
 import MoreInfo from "./MoreInfo";
-import { useSpring, animated } from '@react-spring/web';
+import { animated } from '@react-spring/web';
 
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
@@ -35,8 +35,9 @@ export default function About() {
 
   return (
     <React.Fragment>
-      <animated.div id="about" className="row p-2 m-4 mt-5" ref={targetRef}>
-        <div className="me-info col-4 mb-0 mt-4 text-center" data-bs-spy="scroll">
+      <animated.div id="about" className="row p-4 pt-2 mt-5" ref={targetRef}>
+
+        <div className="z-3 me-info col-4 mb-0 mt-4 text-center" data-bs-spy="scroll">
           <nav className="bg-white shadow  mb-0 nav nav-pills flex-column">
             <div id="about-photo" className=" text-center img-profile ">
               <img id="about_me" src={me} alt="francisco murillo" className="" />
@@ -102,7 +103,8 @@ export default function About() {
           </nav>
         </div>
 
-        <animated.div className=" me-description mt-4 col-8 shadow ">
+        <animated.div className="z-3  bg-white me-description mt-4 col-8 shadow ">
+
           <h2 id="about_me" className="text-success text-center pt-3 mb-0 m-4">About Me</h2>
           <div
             data-bs-spy="scroll"
@@ -113,6 +115,7 @@ export default function About() {
           >
             <div id="item-1-1">
               <div className="m-3">
+
                 <p className="text-black text-start lh-base">
                   Self-taught person, Passionate about software development,
                   focused on creating websites with technologies such as
